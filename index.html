@@ -1,53 +1,63 @@
-<aside class="profile-card">
-  <header>
-    <!-- here’s the avatar -->
-    <a target="_blank" href="#">
-      <img src="http://lorempixel.com/150/150/people/" class="hoverZoomLink">
-    </a>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自己紹介</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
 
-    <!-- the username -->
-    <h1>
-            John Doe
-          </h1>
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-    <!-- and role or location -->
-    <h2>
-            Better Visuals
-          </h2>
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: bounce 2s ease infinite alternate;
+}
 
-  </header>
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 
-  <!-- bit of a bio; who are you? -->
-  <div class="profile-bio">
+h1 {
+  color: #333;
+}
 
-    <p>
-      It takes monumental improvement for us to change how we live our lives. Design is the way we access that improvement.
-    </p>
+p {
+  color: #666;
+}
 
-  </div>
+</style>
+</head>
+<body>
 
-  <!-- some social links to show off -->
-  <ul class="profile-social-links">
-    <li>
-      <a target="_blank" href="https://www.facebook.com/creativedonut">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://twitter.com/dropyourbass">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://github.com/vipulsaxena">
-        <i class="fa fa-github"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://www.behance.net/vipulsaxena">
-       
-        <i class="fa fa-behance"></i>
-      </a>
-    </li>
-  </ul>
-</aside>
+<div class="container">
+  <img src="your_profile_picture.jpg" alt="プロフィール画像" class="profile-img">
+  <h1>こんにちは！</h1>
+  <p>私の名前は〇〇です。</p>
+  <p>趣味は〇〇や〇〇です。</p>
+  <p>興味のあることは〇〇や〇〇です。</p>
+</div>
+
+</body>
+</html>
